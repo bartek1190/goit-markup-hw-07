@@ -33,8 +33,29 @@ body {
   font-family: 'Roboto', sans-serif;
   color: var(--general-font-color);
 }
-
-.logo-link-web {
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 100%;
+}
+.page-header {
+  border-bottom: 1px solid;
+  border-color: var(--border-header-color);
+}
+.page-header__flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+.page-header__gap-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30%;
+}
+.logo {
   font-family: 'Raleway', sans-serif;
   color: var(--black-font-color);
   font-size: 26px;
@@ -42,39 +63,39 @@ body {
   line-height: 1.4em;
   letter-spacing: 0.03em;
 }
+.logo__title {
+  color: var(--general-blue-color);
+}
 .logo-link-web-white {
   color: var(--white-font-color);
 }
-.logo-web {
-  color: var(--general-blue-color);
-}
 
-.header-nav {
+.navigation {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.2em;
   letter-spacing: 0.02em;
 }
-.header-list {
+.navigation__menu-list {
   display: flex;
   gap: 46px;
   list-style: none;
 }
-.header-nav-link {
+.navigation__link {
   color: var(--general-font-color);
   text-decoration: none;
   position: relative;
   transition-duration: 250ms;
   transition-timing-function: var(--cubic-bezier);
 }
-.header-nav-link:hover,
-.header-nav-link:focus {
+.navigation__link:hover,
+.navigation__link:focus {
   color: var(--general-blue-color);
 }
-.active {
+.navigation--active {
   color: var(--general-blue-color);
 }
-.current-page-underline::after {
+.navigation--curret::after {
   content: '';
   position: absolute;
   background-color: var(--general-blue-color);
@@ -84,13 +105,13 @@ body {
   border-radius: 2px;
   height: 4px;
 }
-.header-contact {
+.contakt__title {
   font-size: 14px;
   font-weight: 500;
   line-height: 1.2em;
   letter-spacing: 0.02em;
 }
-.header-contact-link {
+.contakt__link {
   text-decoration: none;
   color: var(--contact-color);
   display: flex;
@@ -98,12 +119,12 @@ body {
   transition-duration: 250ms;
   transition-timing-function: var(--cubic-bezier);
 }
-.header-contact-link:hover,
-.header-contact-link:focus {
+.contakt__link:hover,
+.contakt__link:focus {
   color: var(--general-blue-color);
 }
-.header-contact-link:hover .envelope,
-.header-contact-link:focus .envelope {
+.contakt__link:hover .contakt__icon,
+.contakt__link:focus .contakt__icon {
   fill: var(--general-blue-color);
 }
 
@@ -306,36 +327,13 @@ body {
   color: var(--contact-color);
 }
 
-.container {
-  width: 1200px;
-  padding: 0 15px;
-  margin: 0 auto;
-  max-width: 100%;
-}
-.header-flex-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 80px;
-}
-
-.logo-nav-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 30%;
-}
-
 .contakt {
   list-style: none;
   display: flex;
   gap: 50px;
   align-items: center;
 }
-.header-container {
-  border-bottom: 1px solid;
-  border-color: var(--border-header-color);
-}
+
 .content-container {
   margin: 0 auto;
   max-width: 1600px;
@@ -406,7 +404,7 @@ img {
 .font-normal-class {
   font-style: normal;
 }
-.envelope {
+.contakt__icon {
   fill: var(--contact-color);
   margin-right: 10px;
 }

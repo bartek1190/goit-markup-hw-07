@@ -1,0 +1,37 @@
+.navigation {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2em;
+  letter-spacing: 0.02em;
+
+  &__menu-list {
+    display: flex;
+    gap: 46px;
+    list-style: none;
+
+    .navigation__link {
+      color: $general-font-color;
+      text-decoration: none;
+      position: relative;
+      transition-duration: 250ms;
+      transition-timing-function: $cubic-bezier;
+    }
+    .navigation__link:hover,
+    .navigation__link:focus {
+      color: $general-blue-color;
+    }
+    .navigation--curret::after {
+      content: '';
+      position: absolute;
+      background-color: $general-blue-color;
+      width: 100%;
+      left: 0;
+      bottom: -32px;
+      border-radius: 2px;
+      height: 4px;
+    }
+    .navigation--active {
+      color: $general-blue-color;
+    }
+  }
+}

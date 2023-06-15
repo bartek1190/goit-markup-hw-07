@@ -171,20 +171,20 @@ body {
   justify-content: space-between;
   gap: 30px;
 }
-.main-list-header {
+.main-list__heading {
   font-size: 14px;
   line-height: 1.2em;
   letter-spacing: 0.03em;
   margin-bottom: 10px;
 }
-.main-list-text {
+.main-list__text {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.7em;
   letter-spacing: 0.03em;
   color: var(--contact-color);
 }
-.main-section-whatwedo {
+.section-whatwedo__heading {
   font-size: 36px;
   line-height: 1.2em;
   letter-spacing: 0.03em;
@@ -192,7 +192,7 @@ body {
   margin-top: 94px;
   margin-bottom: 50px;
 }
-.list-style {
+.section-whatwedo__list {
   display: flex;
   justify-content: center;
   gap: 30px;
@@ -407,7 +407,7 @@ img {
   fill: var(--contact-color);
   margin-right: 10px;
 }
-.whatwedo-element-container {
+.main-list__card {
   background-color: var(--container-team-color);
   width: 270px;
   height: 120px;
@@ -506,11 +506,11 @@ img {
 .footer-icon-background {
   background: #ffffff1a;
 }
-.whatwedo-image-position {
+.section-whatwedo__item {
   position: relative;
   display: flex;
 }
-.whatwedo-text-container {
+.section-whatwedo__description {
   font-size: 14px;
   font-weight: 700;
   line-height: 1.15em;
@@ -518,7 +518,7 @@ img {
   color: var(--white-font-color);
   text-transform: uppercase;
 }
-.image-backgound {
+.section-whatwedo__card {
   height: 70px;
   width: 100%;
   background: rgba(47, 48, 58, 0.8);

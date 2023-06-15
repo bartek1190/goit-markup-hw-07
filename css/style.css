@@ -273,7 +273,7 @@ body {
   color: var(--general-blue-color);
 }
 
-.article-list-button {
+.portfolio-menu__button {
   background-color: var(--container-team-color);
   height: 38px;
   width: 93px;
@@ -287,8 +287,8 @@ body {
   transition-duration: 250ms;
   transition-timing-function: var(--cubic-bezier);
 }
-.article-list-button:hover,
-.article-list-button:focus {
+.portfolio-menu__button:hover,
+.portfolio-menu__button:focus {
   cursor: pointer;
   color: var(--white-font-color);
   background-color: var(--general-blue-color);
@@ -296,7 +296,7 @@ body {
   box-shadow: 0px 1px 2px 0px #00000014;
   box-shadow: 0px 3px 1px 0px #0000001a;
 }
-.article-image-container {
+.gallery__figure {
   display: flex;
   flex-direction: column;
   flex-basis: calc((100% - 60px) / 3);
@@ -304,7 +304,7 @@ body {
   transition-timing-function: var(--cubic-bezier);
 }
 
-.overlay-div {
+.gallery__card {
   position: relative;
   overflow: hidden;
 }
@@ -321,12 +321,12 @@ body {
   transition-duration: 250ms;
   transition-timing-function: var(--cubic-bezier);
 }
-.article-image-container:hover .overlay,
-.article-image-container:focus .overlay {
+.gallery__figure:hover .overlay,
+.gallery__figure:focus .overlay {
   transform: translateY(0);
 }
 
-.animation-tekst {
+.overlay__animation-tekst {
   font-family: Roboto;
   font-size: 18px;
   font-weight: 400;
@@ -334,18 +334,18 @@ body {
   letter-spacing: 0.03em;
   color: var(--white-font-color);
 }
-.article-image-container:hover,
-.article-image-container:focus {
+.gallery__figure:hover,
+.gallery__figure:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.image-description1 {
+.card__description1 {
   font-size: 18px;
   font-weight: 700;
   line-height: 2em;
   letter-spacing: 0.06em;
 }
-.image-description2 {
+.card__description2 {
   font-weight: 400;
   line-height: 1.9em;
   letter-spacing: 0.03em;
@@ -376,7 +376,7 @@ img {
 .portfiolio-background {
   background-color: var(--general-white-color);
 }
-.portfolio_nav {
+.portfolio-menu {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -384,19 +384,19 @@ img {
   gap: 8px;
   margin-bottom: 50px;
 }
-.flex-items {
+.gallery {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
-.item {
+.card__item {
   max-height: 110px;
   padding: 20px 24px 20px 24px;
   border: solid 1px;
   border-color: var(--portfolio-border-color);
   border-top: 0;
 }
-.img-container {
+.card__container {
   width: auto;
   max-width: 100%;
   height: auto;

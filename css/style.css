@@ -262,14 +262,14 @@ body {
   letter-spacing: 0.03em;
   color: var(--white-font-color);
 }
-.footer-link {
+.address__link {
   text-decoration: none;
   color: var(--footer-link-contact-color);
   transition-duration: 250ms;
   transition-timing-function: var(--cubic-bezier);
 }
-.footer-link:hover,
-.footer-link:focus {
+.address__link:hover,
+.address__link:focus {
   color: var(--general-blue-color);
 }
 
@@ -369,7 +369,7 @@ img {
   height: auto;
 }
 
-.footer-margin :not(:nth-last-child()) {
+.address__item :not(:nth-last-child()) {
   margin-bottom: 9px;
 }
 

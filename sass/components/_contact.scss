@@ -9,26 +9,27 @@
     font-weight: 500;
     line-height: 1.2em;
     letter-spacing: 0.02em;
+  }
 
-    .contakt__link {
-      text-decoration: none;
-      color: $contact-color;
-      display: flex;
-      align-items: center;
-      transition-duration: 250ms;
-      transition-timing-function: $cubic-bezier;
-      .contakt__icon {
-        fill: $contact-color;
-        margin-right: 10px;
-      }
-    }
-    .contakt__link:hover,
-    .contakt__link:focus {
-      color: $general-blue-color;
-    }
-    .contakt__link:hover .contakt__icon,
-    .contakt__link:focus .contakt__icon {
-      fill: $general-blue-color;
-    }
+  &__link {
+    text-decoration: none;
+    color: $contact-color;
+    display: flex;
+    align-items: center;
+    transition-duration: 250ms;
+    transition-timing-function: $cubic-bezier;
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: $general-blue-color;
+  }
+  &__link:hover .contakt__icon,
+  &__link:focus .contakt__icon {
+    fill: $general-blue-color;
+  }
+  &__icon {
+    fill: $contact-color;
+    margin-right: 10px;
   }
 }

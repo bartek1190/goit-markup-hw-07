@@ -1,0 +1,46 @@
+.acceptance {
+  display: flex;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #757575;
+  margin-left: 55px;
+  align-items: center;
+  margin-top: 16px;
+  .acceptance__checkbox-hidden {
+    visibility: hidden;
+    position: absolute;
+  }
+
+  &__checkbox-icon-unchecked {
+    position: relative;
+  }
+
+  &__checkbox-icon {
+    position: absolute;
+    margin-top: 4px;
+    margin-left: 0.5px;
+    margin-bottom: 3px;
+    visibility: hidden;
+    fill: #ffffff;
+    border-radius: 2px;
+    transition-property: background-color, visibility;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__checkbox-hidden:checked ~ &__checkbox-icon {
+    visibility: visible;
+    background-color: #2196f3;
+  }
+
+  &__text-regul {
+    margin-left: 8px;
+  }
+
+  &__text-decor {
+    color: #2196f3;
+    text-decoration: underline;
+  }
+}

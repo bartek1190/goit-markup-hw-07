@@ -9,9 +9,7 @@
     text-align: center;
   }
   &__list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
     gap: 30px;
     list-style: none;
   }

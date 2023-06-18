@@ -1,7 +1,5 @@
 .portfolio-menu {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-center;
   list-style: none;
   gap: 8px;
   margin-bottom: 50px;

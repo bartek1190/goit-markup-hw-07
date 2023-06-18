@@ -34,9 +34,7 @@
     margin-left: auto;
     margin-right: 8px;
     margin-top: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex-center;
     background: transparent;
   }
   &__title {

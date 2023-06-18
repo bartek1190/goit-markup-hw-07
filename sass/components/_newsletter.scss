@@ -25,9 +25,7 @@
     letter-spacing: 0.06em;
     color: $white-font-color;
     box-shadow: $btn-shadow;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex-center;
     gap: 24px;
     cursor: pointer;
   }

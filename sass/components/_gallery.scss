@@ -1,0 +1,27 @@
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+
+  &__figure {
+    display: flex;
+    flex-direction: column;
+    flex-basis: calc((100% - 60px) / 3);
+    transition-duration: 250ms;
+    transition-timing-function: $cubic-bezier;
+
+    &:hover .overlay,
+    &:focus .overlay {
+      transform: translateY(0);
+    }
+    &:hover,
+    &:focus {
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+  }
+  &__card {
+    position: relative;
+    overflow: hidden;
+  }
+}

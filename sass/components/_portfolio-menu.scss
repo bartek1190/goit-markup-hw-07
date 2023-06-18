@@ -1,0 +1,33 @@
+.portfolio-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 8px;
+  margin-bottom: 50px;
+
+  &__button {
+    background-color: $container-team-color;
+    height: 38px;
+    width: 93px;
+    border-radius: 4px;
+    border: 0;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.6em;
+    letter-spacing: 0.03em;
+    text-align: center;
+    transition-duration: 250ms;
+    transition-timing-function: $cubic-bezier;
+
+    &:hover,
+    &:focus {
+      cursor: pointer;
+      color: $white-font-color;
+      background-color: $general-blue-color;
+      box-shadow: 0px 2px 2px 0px #0000001f;
+      box-shadow: 0px 1px 2px 0px #00000014;
+      box-shadow: 0px 3px 1px 0px #0000001a;
+    }
+  }
+}

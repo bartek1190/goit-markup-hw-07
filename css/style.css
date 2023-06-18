@@ -184,12 +184,14 @@ body {
   letter-spacing: 0.03em;
   color: var(--contact-color);
 }
+.section-whatwedo {
+  margin-top: 94px;
+}
 .section-whatwedo__heading {
   font-size: 36px;
   line-height: 1.2em;
   letter-spacing: 0.03em;
   text-align: center;
-  margin-top: 94px;
   margin-bottom: 50px;
 }
 .section-whatwedo__list {
@@ -223,7 +225,7 @@ body {
   gap: 30px;
   list-style: none;
 }
-.team__card {
+.card {
   box-shadow: 0px 2px 1px 0px #00000033;
   box-shadow: 0px 1px 1px 0px #00000024;
   box-shadow: 0px 1px 3px 0px #0000001f;
@@ -253,6 +255,10 @@ body {
 .page-footer__section {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+.page-footer__flexible {
+  display: flex;
+  gap: 70px;
 }
 .address {
   margin-top: 20px;
@@ -351,6 +357,10 @@ body {
   letter-spacing: 0.03em;
   color: var(--contact-color);
 }
+.card__caption {
+  width: 270px;
+  height: 168px;
+}
 
 .contakt {
   list-style: none;
@@ -359,20 +369,15 @@ body {
   align-items: center;
 }
 
-.card__caption {
-  width: 270px;
-  height: 168px;
-}
 img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-.address__item :not(:nth-last-child()) {
+.address__item:not(:last-child) {
   margin-bottom: 9px;
 }
-
 .portfiolio-background {
   background-color: var(--general-white-color);
 }
@@ -483,10 +488,6 @@ img {
 .our-clients-list__item:hover {
   border: 1px solid var(--general-blue-color);
 }
-.page-footer__flexible {
-  display: flex;
-  gap: 70px;
-}
 .widget__heading {
   font-size: 14px;
   font-weight: 700;
@@ -497,7 +498,7 @@ img {
   margin-top: 12px;
   margin-bottom: 20px;
 }
-.widget__list {
+.widget {
   height: 80px;
   width: 206px;
   list-style: none;
@@ -573,7 +574,9 @@ img {
   justify-content: center;
   background: transparent;
 }
-
+.newsletter {
+  display: block;
+}
 .newsletter__label {
   display: block;
 }
@@ -604,7 +607,7 @@ img {
   gap: 24px;
   cursor: pointer;
 }
-.icons-svg-send {
+.newsletter__icon-hovering {
   fill: var(--white-font-color);
 }
 .newsletter__div-flexible {

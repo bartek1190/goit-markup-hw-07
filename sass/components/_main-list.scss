@@ -4,7 +4,7 @@
   justify-content: space-between;
   gap: 30px;
   &__card {
-    background-color: var(--container-team-color);
+    background-color: $container-team-color;
     width: 270px;
     height: 120px;
     display: flex;
@@ -23,6 +23,6 @@
     font-weight: 400;
     line-height: 1.7em;
     letter-spacing: 0.03em;
-    color: var(--contact-color);
+    color: $contact-color;
   }
 }

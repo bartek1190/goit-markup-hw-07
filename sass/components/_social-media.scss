@@ -1,0 +1,31 @@
+.social-media {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+
+  &__item {
+    width: 44px;
+    height: 44px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+    padding-left: 11px;
+    padding-top: 11px;
+    transition-duration: 250ms;
+    transition-timing-function: var(--cubic-bezier);
+
+    &:hover,
+    &:focus {
+      border: 1px solid #2196f3;
+      background-color: #2196f3;
+    }
+    &:hover &--accent,
+    &:focus &--accent {
+      fill: #ffffff;
+    }
+    &--accent {
+      fill: $icon-color;
+    }
+  }
+}

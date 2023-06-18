@@ -13,8 +13,7 @@
     color: $general-font-color;
     text-decoration: none;
     position: relative;
-    transition-duration: 250ms;
-    transition-timing-function: $cubic-bezier;
+    transition: $general-transition;
   }
   &__link:hover,
   &__link:focus {

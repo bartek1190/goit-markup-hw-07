@@ -5,7 +5,7 @@
   display: flex;
   gap: 10px;
   &__item {
-    background: #ffffff1a;
+    background: $widget-item;
   }
   &__heading {
     font-size: 14px;

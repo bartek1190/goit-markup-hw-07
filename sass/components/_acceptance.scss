@@ -4,11 +4,12 @@
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: $contact-color;
   margin-left: 55px;
   align-items: center;
   margin-top: 16px;
-  .acceptance__checkbox-hidden {
+
+  &__checkbox-hidden {
     visibility: hidden;
     position: absolute;
   }
@@ -23,16 +24,15 @@
     margin-left: 0.5px;
     margin-bottom: 3px;
     visibility: hidden;
-    fill: #ffffff;
+    fill: $white-font-color;
     border-radius: 2px;
     transition-property: background-color, visibility;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: $general-transition;
   }
 
   &__checkbox-hidden:checked ~ &__checkbox-icon {
     visibility: visible;
-    background-color: #2196f3;
+    background-color: $general-blue-color;
   }
 
   &__text-regul {
@@ -40,7 +40,7 @@
   }
 
   &__text-decor {
-    color: #2196f3;
+    color: $general-blue-color;
     text-decoration: underline;
   }
 }

@@ -9,7 +9,7 @@
     height: 50px;
     background-color: transparent;
     border: 1px solid $general-blue-color;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    filter: drop-shadow($btn-shadow);
     border-radius: 4px;
     padding: 16px;
     color: $white-font-color;
@@ -24,7 +24,7 @@
     line-height: 1.9em;
     letter-spacing: 0.06em;
     color: $white-font-color;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    box-shadow: $btn-shadow;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -36,7 +36,7 @@
     gap: 12px;
   }
   &__input:placeholder-shown {
-    border-color: rgba(255, 255, 255, 0.3);
+    border-color: $newsletter-placeholder;
   }
   .newsletter__icon-hovering {
     fill: $white-font-color;

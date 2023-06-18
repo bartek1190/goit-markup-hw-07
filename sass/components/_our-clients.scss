@@ -14,8 +14,7 @@
     justify-content: center;
     cursor: pointer;
     color: $icon-color;
-    transition-duration: 250ms;
-    transition-timing-function: $cubic-bezier;
+    transition: $general-transition;
 
     &:hover .our-clients-list--fill,
     &:focus .our-clients-list--fill {

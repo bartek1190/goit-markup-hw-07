@@ -14,8 +14,7 @@
   &__link {
     text-decoration: none;
     color: $footer-link-contact-color;
-    transition-duration: 250ms;
-    transition-timing-function: $cubic-bezier;
+    transition: $general-transition;
 
     &:hover,
     &:focus {

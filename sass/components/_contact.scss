@@ -16,8 +16,7 @@
     color: $contact-color;
     display: flex;
     align-items: center;
-    transition-duration: 250ms;
-    transition-timing-function: $cubic-bezier;
+    transition: $general-transition;
   }
 
   &__link:hover,
